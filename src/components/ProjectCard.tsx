@@ -9,7 +9,7 @@ export type ProjectProps = {
 
 export function ProjectCard(props: ProjectProps) {
   return (
-    <div className="bg-primary/50 rounded-lg overflow-hidden transition-all duration-300 group hover:bg-primary/60 hover:scale-[1.01] hover:shadow-[0_0_15px_rgba(168,85,247,0.25)] h-[300px]">
+    <div className="bg-primary/50 rounded-lg overflow-hidden transition-all duration-300 group hover:bg-primary/60 hover:scale-[1.01] hover:shadow-[0_0_15px_rgba(168,85,247,0.25)]">
       <div className="flex flex-col md:flex-row h-full">
         {/* Project Image - Left 1/3 */}
         <div className="md:w-1/3 relative p-2.5 h-full">
