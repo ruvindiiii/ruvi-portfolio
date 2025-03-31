@@ -44,6 +44,7 @@ export default function Tech() {
       title: "Express.js",
       imageUrl:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      invert: true,
     },
     {
       title: "MongoDB",
@@ -82,6 +83,7 @@ export default function Tech() {
       title: "GitHub",
       imageUrl:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      invert: true,
     },
     {
       title: "Git",
@@ -106,7 +108,13 @@ export default function Tech() {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
               {frontendTechs.map((tech) => {
-                return <TechCard title={tech.title} imageUrl={tech.imageUrl} />;
+                return (
+                  <TechCard
+                    title={tech.title}
+                    imageUrl={tech.imageUrl}
+                    invert={tech.invert}
+                  />
+                );
               })}
             </div>
           </div>
@@ -116,7 +124,13 @@ export default function Tech() {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
               {backendTechs.map((tech) => {
-                return <TechCard title={tech.title} imageUrl={tech.imageUrl} />;
+                return (
+                  <TechCard
+                    title={tech.title}
+                    imageUrl={tech.imageUrl}
+                    invert={tech.invert}
+                  />
+                );
               })}
             </div>
           </div>
@@ -126,7 +140,13 @@ export default function Tech() {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
               {infraTechs.map((tech) => {
-                return <TechCard title={tech.title} imageUrl={tech.imageUrl} />;
+                return (
+                  <TechCard
+                    title={tech.title}
+                    imageUrl={tech.imageUrl}
+                    invert={tech.invert}
+                  />
+                );
               })}
             </div>
           </div>

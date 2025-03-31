@@ -1,6 +1,7 @@
 export type TechCardProps = {
   imageUrl: string;
   title: string;
+  invert?: boolean;
 };
 
 export function TechCard(props: TechCardProps) {
@@ -9,7 +10,9 @@ export function TechCard(props: TechCardProps) {
       <img
         src={props.imageUrl}
         alt={props.title}
-        className="w-12 h-12 mb-2 group-hover:animate-pulse"
+        className={`w-12 h-12 mb-2 group-hover:animate-pulse ${
+          props.invert ? "invert" : ""
+        }`}
       />
       <span className="text-white group-hover:font-medium">{props.title}</span>
     </div>
