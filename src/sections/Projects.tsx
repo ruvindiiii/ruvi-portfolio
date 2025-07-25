@@ -1,10 +1,21 @@
 import flexTheBoxImage from "../assets/flex-the-box.png";
 import pinfinityImage from "../assets/pinfinity.png";
 import findMyMovieImage from "../assets/find-my-movie.png";
+import typeMasterImage from "../assets/type-master.png";
 import { ProjectCard, ProjectProps } from "@/components/ProjectCard";
 
 export default function Projects() {
   const projects: ProjectProps[] = [
+    {
+      image: typeMasterImage,
+      title: "TypeMaster",
+      description: `A fun and engaging tool to test and improve typing skills. TypeTest tracks words per minute, total time, accuracy, and word count in real time, giving the user instant feedback on performance. Whether practicing for speed, accuracy, or just challenging yourself, it's a simple and enjoyable way to level up your typing game.
+
+`,
+      tags: ["React", "Tailwind", "Typescript", "NextJs", "CSS", "Javascript"],
+      githubUrl: "https://github.com/ruvindiiii/type-master",
+      liveDemoUrl: "https://www.typetest.top/",
+    },
     {
       image: flexTheBoxImage,
       title: "Flex-the-Box",
